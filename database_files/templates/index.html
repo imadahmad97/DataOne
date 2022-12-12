@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +23,9 @@
     <div class="center">
         <form method="POST" action="/" enctype="multipart/form-data">
             <input type="file" name="file">
-            <button>Submit</button>
+            <button onclick="$('#loading').show();">Submit</button>
         </form>
+        <div id="loading" style="display:none;"><img src="https://media.tenor.com/q0Cj0U0_4-0AAAAC/genius-smart.gif" alt="" width = "250"/>Analyzing! This may take a few minutes.</div>
     </div>
 </body>
 </html>
