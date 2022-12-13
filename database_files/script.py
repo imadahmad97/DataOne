@@ -1,7 +1,19 @@
 import pandas as pd
 from pandas_profiling import ProfileReport
+import os
 
 def analyze(fl):
     raw = pd.read_csv(fl)
-    profile = ProfileReport(raw, title = "Report", explorative=True)
-    profile.to_file(f'database_files/templates/{fl}.html')
+    pandas_profiling_report = raw.profile_report(
+    title="Pandas Profiling Report", 
+    explorative=True,
+    html={'style': 
+          {'full_width': True,
+           'theme':'flatly'} 
+        })
+    pandas_profiling_report.to_file(f'database_files/templates/{fl}.html')
+
+
+
+
+
