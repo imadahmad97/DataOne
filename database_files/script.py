@@ -11,9 +11,6 @@ def analyze(fl):
           {'full_width': True,
            'theme':'flatly'} 
         })
-    pandas_profiling_report.to_file(f'database_files/templates/{fl}.html')
-
-
-
+    pandas_profiling_report.to_file(f'templates/{fl}.html')
 
 
