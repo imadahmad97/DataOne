@@ -1,6 +1,5 @@
 import pandas as pd
 from pandas_profiling import ProfileReport
-import os
 
 def analyze(fl):
     raw = pd.read_csv(fl)
