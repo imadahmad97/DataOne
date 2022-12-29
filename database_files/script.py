@@ -12,4 +12,4 @@ def analyze(fl,tm):
            'theme':'flatly'} 
         })
     pandas_profiling_report.to_file(f'templates/{tm}.html')
-``
+     
