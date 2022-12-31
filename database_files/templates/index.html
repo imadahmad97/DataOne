@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "style.css">
     <title>File Upload Example</title>
 </head>
 <body>
@@ -13,16 +13,15 @@
         <div class="nav">
             <div class="navbar">
             <ul id="navigation">
-                    <a href="#"><li><img src="https://i.ibb.co/3BRWyHQ/csv.png"; id="Homeimage"></li></a>
-                <div id="navright">
-                    <a href="#"><li>HOME</li></a>
-                </div>
+                <a href="index.html"><li><img src="https://i.ibb.co/C1ZQD0g/logo.png"; id="Homeimage" style="width:150px;height:150px;"></li></a>
             </ul>
             </div>
             </div>
         </div>
+  <div class="center">
+        Upload any CSV file (up to 1 GB) and recieve a full report in 1-3 minutes!
+  </div>
     <div class="center">
-        Upload a csv file (up to 1 GB) to recieve a full report within 1-2 minutes!
         <form method="POST" action="/" enctype="multipart/form-data">
             <input type="file" name="file">
             <button onclick="$('#loading').show();">Submit</button>
