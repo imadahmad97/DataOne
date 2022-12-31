@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 10vh;
 }
 
 .nav a li {
@@ -19,8 +19,6 @@ display: inline-block;
 vertical-align: center;
 }
 .nav {
-padding-bottom: 5px;
-padding-top: 5px;
 margin: 0;
 text-align: left;
 vertical-align: center;
@@ -33,11 +31,6 @@ height: auto;
 height: 60px;
 width: 60px;
 padding-left: 40px;
-padding-top: 10px;
 display: block;
 text-align: left;
-}
-#navright{
-float:right;
-margin-top:20px;
 }
