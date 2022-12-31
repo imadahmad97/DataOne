@@ -34,3 +34,8 @@ padding-left: 40px;
 display: block;
 text-align: left;
 }
+
+#navright{
+float:right;
+margin-top:20px;
+}
