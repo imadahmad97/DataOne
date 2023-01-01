@@ -44,3 +44,9 @@ margin-top:20px;
   align-items: center;
   padding-top: 40vh;
 }
+.sample {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+}
